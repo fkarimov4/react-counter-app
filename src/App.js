@@ -13,9 +13,7 @@ function App() {
         <button 
           onClick={() => setCounter(0)}
         > Reset </button>
-        <button 
-          onClick={() => setCounter(counter - 1)}
-        > - </button>
+        { counter !== 0 && <button onClick={() => setCounter(counter - 1)}> - </button>}
         
       </header>
     </div>
